@@ -18,7 +18,7 @@ public class Queen {
             return false;
          }
         }
-        return true;
+        return true;     
     }
     public static void nQueen(char board[][],int row){
         
@@ -31,8 +31,7 @@ public class Queen {
        if(isSafe(board,row,j)){
         board[row][j]='Q';
         nQueen(board, row+1);
-        board[row][j]='X';//backtracking
-       
+        board[row][j]='X';//backtracking  
        }
     }
     }
