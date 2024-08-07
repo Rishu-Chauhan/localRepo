@@ -24,7 +24,8 @@ public class Queen {
         
         //basecase
         if(row==board.length){
-            printBoard(board);
+            //printBoard(board);
+            count++;
             return;
         }
     for(int j=0;j<board.length;j++){
@@ -45,8 +46,9 @@ public class Queen {
             System.out.println();
         }
     }
+    static int count=0;
     public static void main(String[] args) {
-        int n=4;
+        int n=1;
         char board[][]=new char[n][n];
         for(int i=0;i<board.length;i++){//initialize
             for(int j=0;j<board.length;j++){
@@ -54,5 +56,6 @@ public class Queen {
             }
         }
         nQueen(board,0);
+        System.out.println(count);
     }
 }
