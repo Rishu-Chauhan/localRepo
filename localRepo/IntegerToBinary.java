@@ -3,7 +3,7 @@ import java.util.Collections;
 
 public class IntegerToBinary {
     public static void main(String[] args) {
-        Integer[] nums = {3, 1, 2};
+        Integer[] nums = {3,1,2};
         StringBuilder binaryStrings = new StringBuilder();
         
         for (int num : nums) {
